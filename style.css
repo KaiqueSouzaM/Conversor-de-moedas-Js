@@ -90,18 +90,19 @@ div {
     font-weight: 600;
 }
 
-.currency-value, .currency-value-to-convert{
+.currency-value,
+.currency-value-to-convert {
     font-weight: 700;
     font-size: 20px;
     color: #555555;
 }
 
 @media screen and (max-width: 500px) {
-    
+
     * {
         overflow: hidden;
     }
-    
+
     .logo {
         display: none;
     }
@@ -118,5 +119,13 @@ div {
 
     button {
         margin: 99px auto 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+
+    button {
+        margin: 1px auto 0;
     }
 }
