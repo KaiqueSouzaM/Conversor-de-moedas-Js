@@ -33,5 +33,25 @@ function convertValues() {
 
 }
 
-convertButton.addEventListener("click", convertValues)
+function changeValues() {
 
+const currencyName = document.getElementById("currency-name")
+const currencyImg = document.querySelector(".currency-img")
+
+if(currencySelect.value == "dolar"){
+      currencyName.innerHTML = "Dólar Americano"
+      currencyImg.src = "./assets/dolar.png"
+}
+
+if(currencySelect.value == "euro"){
+    currencyName.innerHTML = "Euro"
+    currencyImg.src = "./assets/euro.png"
+}
+
+convertValues()
+}
+
+   
+
+convertButton.addEventListener("click", convertValues)
+currencySelect.addEventListener("change", changeValues)
